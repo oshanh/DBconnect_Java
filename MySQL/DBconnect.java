@@ -18,7 +18,8 @@ public class DBconnect {
          String dbname="your_dbname";
          String username="your_username";
          String password="your_password";
-        conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/"+dbname,username,password);
+         String port="your_port";
+        conn=DriverManager.getConnection("jdbc:mysql://localhost:"+port+"/"+dbname,username,password);
         
         System.out.print(conn);
     }
